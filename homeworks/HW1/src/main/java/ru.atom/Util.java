@@ -1,5 +1,9 @@
 package ru.atom;
 
+import java.util.Arrays;
+import java.util.stream.IntStream;
+import java.util.stream.LongStream;
+
 /**
  * In this assignment you need to implement the following util methods.
  * Note:
@@ -16,8 +20,8 @@ public class Util {
      * @return the largest of values.
      */
     public static int max(int[] values) {
-        //throw new UnsupportedOperationException();
-        return 1;
+        IntStream stream = Arrays.stream(values);
+        return stream.max().getAsInt();
     }
 
     /**
@@ -27,8 +31,8 @@ public class Util {
      * @return the sum of all values.
      */
     public static long sum(int[] values) {
-        //throw new UnsupportedOperationException();
-        return 0;
+        LongStream stream = Arrays.stream(values).asLongStream();
+        return stream.sum();
     }
 
 

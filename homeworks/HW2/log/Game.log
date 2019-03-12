@@ -1,0 +1,8 @@
+2019-03-12 23:20:14.324 INFO [main] [ru.example.BullsAndCows] [main] [ru.example.BullsAndCows.Game.main(Game.java:21)] - Start game
+2019-03-12 23:20:43.152 INFO [main] [ru.example.BullsAndCows] [main] [ru.example.BullsAndCows.Game.main(Game.java:51)] - win
+2019-03-12 23:22:35.253 INFO [main] [ru.example.BullsAndCows] [main] [ru.example.BullsAndCows.Game.main(Game.java:21)] - Start game
+2019-03-12 23:23:10.112 INFO [main] [ru.example.BullsAndCows] [main] [ru.example.BullsAndCows.Game.main(Game.java:48)] - lose
+2019-03-12 23:27:53.410 INFO [main] [ru.example.BullsAndCows] [main] [ru.example.BullsAndCows.Game.main(Game.java:21)] - Start game
+2019-03-12 23:28:47.572 INFO [main] [ru.example.BullsAndCows] [main] [ru.example.BullsAndCows.Game.main(Game.java:48)] - lose
+2019-03-12 23:31:39.338 INFO [main] [ru.example.BullsAndCows] [main] [ru.example.BullsAndCows.Game.main(Game.java:21)] - Start game
+2019-03-12 23:33:05.297 INFO [main] [ru.example.BullsAndCows] [main] [ru.example.BullsAndCows.Game.main(Game.java:48)] - lose

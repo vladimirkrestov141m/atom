@@ -13,7 +13,7 @@ import ru.atom.chat.server.ChatApplication;
 import java.io.IOException;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes={ChatApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
+@SpringBootTest(classes = {ChatApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class ChatClientTest {
     private static String MY_NAME_IN_CHAT = "I_AM_STUPID";
     private static String MY_MESSAGE_TO_CHAT = "SOMEONE_KILL_ME";

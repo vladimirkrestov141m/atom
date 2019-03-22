@@ -51,4 +51,31 @@ public class ChatClientTest {
         System.out.println(response.body().string());
         Assert.assertEquals(200, response.code());
     }
+
+    @Test
+    public void logout() throws IOException {
+        Response response2 = ChatClient.login(MY_NAME_IN_CHAT);
+        Response response = ChatClient.logout(MY_NAME_IN_CHAT);
+        System.out.println("[" + response + "]");
+        String responseBody = response.body().string();
+        System.out.println(responseBody);
+        Assert.assertTrue(response.code() == 200 && responseBody.equals("success"));
+    }
+
+    @Test
+    public void clearHistory() throws IOException {
+        Response response = ChatClient.clearHistory();
+        System.out.println("[" + response + "]");
+        String responseBody = response.body().string();
+        System.out.println(responseBody);
+        Assert.assertTrue(response.code() == 200 && responseBody.equals("Clear"));
+    }
+
+    @Test
+    public void getCurrentDate() throws IOException {
+        Response response = ChatClient.getCurrentDate();
+        System.out.println("[" + response + "]");
+        System.out.println(response.body().string());
+        Assert.assertEquals(200, response.code());
+    }
 }

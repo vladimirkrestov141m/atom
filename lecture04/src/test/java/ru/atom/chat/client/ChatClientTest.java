@@ -4,11 +4,16 @@ import okhttp3.Response;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 import ru.atom.chat.client.ChatClient;
+import ru.atom.chat.server.ChatApplication;
 
 import java.io.IOException;
 
-@Ignore
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = {ChatApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class ChatClientTest {
     private static String MY_NAME_IN_CHAT = "I_AM_STUPID";
     private static String MY_MESSAGE_TO_CHAT = "SOMEONE_KILL_ME";
